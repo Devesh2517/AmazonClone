@@ -8,15 +8,7 @@ const nodemailer = require("nodemailer")
 const Groceries = require("../Modal/Groceries")
 const Clothes = require("../Modal/Clothes")
 
-//transporter for mail when user checkout for ordering 
-var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'prajapatidevesh205@gmail.com',
-      pass: 'kdbslzuffazyfipu'
-    }
-  });
-  
+
 
 //Route for fetch initial data of items
 //Route-1 for getting the products of electronics
@@ -141,34 +133,7 @@ router.delete("/deleteallitems", fetchuser, async (req, res) => {
       
       
       //when user checkout order is confirm mail sent to the user
-      var mailOptions = {
-         from: 'prajapatidevesh205@gmail.com',
-         to: user.Email,
-         subject: 'Your order is Confirmed!',
-         html: `<pre>Hi ${user.name},
-
-         Thank you for your order! Your order has been confirmed and will be shipped soon.
-
-         Here are the details of your order:
-
-         Order number:123456
-         Order date: 26/07/2024
-         
-         
-         We will send you an email when your order ships. In the meantime, you can track your order status here: [tracking link].
-
-         Thank you for shopping with us!
-
-         Sincerely,
-         [Your name]
-         </pre>`
-      };
-
-      transporter.sendMail(mailOptions, function (error, info) {
-         if (error) {
-            console.log(error);
-         }
-      });
+     
       res.json(cartItem)
    }
    catch (error) {
