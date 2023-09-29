@@ -1,0 +1,25 @@
+.home{
+height: 600px;
+margin: auto;
+margin-bottom: -200px;
+}
+.home_img{
+    margin-bottom: -120px;
+}
+/* for hero msg */
+.hero-msg{
+    background-color: lightgray;
+    height: 40px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-left: 60px;
+}
+
+.hero-link{
+    text-decoration: none;
+    color: #007185;
+}

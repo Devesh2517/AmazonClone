@@ -1,0 +1,26 @@
+#carouselExampleAutoplaying{
+    width: 100%;
+    object-fit: contain;
+    mask-image: linear-gradient(to top, rgba(0,0, 0, 0), rgba(0, 0,0, 1));
+    margin-bottom: -150px;
+    
+}
+
+.carousel-control-prev-icon{
+    border:1px solid transparent;
+    height: 150px;
+    width: 80px;
+}
+.carousel-control-prev-icon:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+.carousel-control-next-icon{
+    border:1px solid transparent;
+    height: 150px;
+    width: 80px;
+}
+.carousel-control-next-icon:hover{
+    border: 2px solid black;
+}
+
+

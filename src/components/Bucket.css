@@ -1,0 +1,131 @@
+.Bucket_row {
+    max-width: 1000px;
+    max-height: 400px;
+    margin: auto;
+    border: 0.5px solid black;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.bucket_first {
+    border: 1px solid lightgray;
+}
+
+.bucket_first img {
+    max-height: 200px;
+    margin-left: 10px;
+}
+
+.bucket_second {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bucket_third {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.bucket_four {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* for rupees symbol and rupees value */
+
+.first_span {
+    font-weight: bold;
+    position: absolute;
+    color: rgb(177 39 4);
+    /* margin-top: '2px'; */
+}
+
+.second_span {
+    color: rgb(177 39 4);
+    font-size: '20px';
+    margin-left: 10px;
+}
+
+.third_span {
+    margin-left: 2px;
+    font-size: 10px;
+    position: absolute;
+    color: rgb(177 39 4);
+    margin-top: 5px;
+}
+
+/* remove item button */
+.btn_remove {
+
+    margin-top: '50px';
+    width: '15rem';
+    border-radius: 10px;
+}
+
+/* for checkout  */
+.checkout_cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+
+.btn_checkout{
+    background-color: hsla(54, 100%, 50%, 0.689);
+    border: none;
+    padding: 4px;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+.subtotal__gift{
+    margin-bottom: 20px;
+}
+
+
+/* for empty bucket  */
+
+
+
+.empty-cart {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.empty-cart h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.empty-cart p {
+  font-size: 1rem;
+}
+
+.empty-cart a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: hsla(54, 100%, 50%, 0.689);
+  padding: 10px;
+  border-radius: 7px;
+
+}
+
+@media (max-width: 768px) {
+  .empty-cart {
+    width: 100%;
+  }
+}
+

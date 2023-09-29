@@ -1,0 +1,29 @@
+.product-card{
+    min-width: 300px;
+    max-width: 300px;
+    height: 280px;
+    color: black;
+    background-color: white;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.product-header{
+    margin-left: 20px;
+    margin-top: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 21px;
+    background-color: white;
+}
+.product-body{
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 220px;
+}
+.product-body img{
+    height: 200px;
+    width: 200px;
+    border: none;
+}
