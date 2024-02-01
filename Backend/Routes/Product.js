@@ -8,7 +8,9 @@ const nodemailer = require("nodemailer")
 const Groceries = require("../Modal/Groceries")
 const Clothes = require("../Modal/Clothes")
 
+//transporter for mail when user checkout for ordering 
 
+  
 
 //Route for fetch initial data of items
 //Route-1 for getting the products of electronics

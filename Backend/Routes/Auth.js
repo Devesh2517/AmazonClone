@@ -7,9 +7,6 @@ const JWT = require("jsonwebtoken")
 const JWT_SECRET = "Iamdevesh"
 const nodemailer = require("nodemailer")
 
-
-
-  
  
 
 //Route-1 create a user using POST method 
@@ -51,7 +48,8 @@ body('Password', "password length must be 5").isLength({ min: 5 })],
             const authtoken = JWT.sign(data, JWT_SECRET)
             success = true
 
-           
+            //when user created sent mail on users mail 
+       
 
             res.json({ success: success, authtoken:authtoken,name:user.name })
         }
@@ -89,8 +87,6 @@ body('Password', "password length must be 5").isLength({ min: 5 })],
             success = true
 
             //when user login on the website again send mail
-
-          
 
             //pass authtoken in response
 
